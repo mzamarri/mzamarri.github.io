@@ -5,7 +5,7 @@ services:
     env_file:
       - ./resources/.env
     volumes:
-      - ./resources/client_secret.json:/usr/src/app/server/client_secret.json
+      - ./resources/client_secret.json:/usr/src/app/resources/client_secret.json
     ports:
       - 3000:3000
     

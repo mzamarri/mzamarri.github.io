@@ -7,9 +7,9 @@ const env = require('dotenv').config({path: path.join(__dirname, '../.env')});
 
 // This function will run and check if the client_secret.json file exists, and if not it will check if 
 // the secrets are in environment variables. Else if will throw an error.
-const [client_id, client_secret] = () => {
+const [client_id, client_secret] = (() => {
     try {
-        const clientSecret = require('./client_secret.json');
+        const clientSecret = require(path.join('../','./resources/client_secret.json'));
         return [clientSecret.web.client_id, clientSecret.web.client_secret];
     } catch (err) {
         console.error("Error reading client_secret.json: ", err);
@@ -20,10 +20,10 @@ const [client_id, client_secret] = () => {
             const client_secret = process.env.client_secret;
             return [client_id, client_secret];
         } else {
-            console.error("No client_secret.json file or environment variables found");
+            throw new Error("No client_secret.json file or environment variables found");
         }
     }
-}
+})();
 const nodemailer = require('nodemailer');
 
 const PORT = process.env.PORT || 3000;
@@ -43,8 +43,6 @@ oauth2Client.setCredentials({
 });
 
 async function sendMail(subject, message) {
-    const client_id = clientSecret.web.client_id;
-    const client_secret = clientSecret.web.client_secret;
     const USER = process.env.EMAIL_USER;
     const TO = process.env.EMAIL_TO;
     // console.log("client id: ", client_id);

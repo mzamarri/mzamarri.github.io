@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script src="scripts/lucide-icons.js" defer></script>
+        <script src="scripts/typewriter.js" defer></script>
+        <script src="scripts/contact-form.js" defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header class="">
+            <img class="logo" src="public/logo-6.png" alt="logo">
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#journey">Journey</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a 
+                class="resume"
+                href="./public/Miguel_Angel_Zamarripa_Rodriguez_Resume.pdf"
+                download="Miguel_Angel_Zamarripa_Rodriguez_Resume.pdf"
+            >
+                <i class="resume-icon" data-lucide="download"></i>
+                Download Resume
+            </a>
+        </header>
+        <div id="container">
+            <section id="hero">
+                <!-- <h1>Home Page</h1>  -->
+                <div class="hero-glow"></div>
+                <div class="hero-grid"></div>
+                <div class="home-content">
+                    <div class="content-description">
+                        <p class="introduction">Hi, I'm Miguel.</p>
+
+                        <h1 class="role">
+                            Looking for a <br>
+                            <span id="typewriter">Software Engineer?</span><br>
+                        </h1>
+                        <p class="hero-description">
+                            I build complete software solutions — from thoughtful frontend 
+                            interfaces to backend APIs, relational databases, and cloud 
+                            deployments. Open to new challenges and opportunities where 
+                            I can continue growing as an engineer while delivering meaningful 
+                            solutions.
+                        </p>
+                    </div>
+                    <div class="portfolio-picture">
+                        <img id="profile-photo" src="public/portfolio-photo.png" alt="profile photo">
+                    </div>
+                </div>
+            </section>
+            <section id="journey">
+                <div class="highlights">
+                    <div class="stat">
+                        <span>3+</span> 
+                        <p>Years Of Coding Experience</p>
+                    </div>
+                    <div class="stat">
+                        <span>3+</span>
+                        <p>Projects Built</p>
+                    </div>
+                </div>
+                <div class="journey-content">
+                    <span class="header-badge">My Journey</span>
+                    <h1 class="header">Still Learning. Still Building.</h1>
+                    <p>
+                        Computers have always peaked my interest, so after being laid off 
+                        back at the very end of 2022 from Qualcomm, I found myself at 
+                        a crossroads in my career. While I enjoyed learning about the low-level 
+                        details of a computer system, over time I found myself increasingly 
+                        drawn to software for its ability to transform ideas into products that 
+                        solve real problems. As my interest in entrepreneurship grew, choosing 
+                        software development felt like the natural path. Since then, I’ve spent 
+                        countless hours teaching myself through online courses, documentation, 
+                        and hands-on projects. Every project has been another opportunity 
+                        to learn, improve, and become a more thoughtful developer.
+                        
+                        
+                        <br>
+                        <br>
+                        Outside of programming, I’m someone who enjoys challenges that require 
+                        patience, strategy, and continuous growth. Whether I’m practicing Muay 
+                        Thai, playing chess, or tackling a difficult technical problem, I enjoy 
+                        the process of improving a little every day. Today, I'm excited to bring 
+                        that same curiosity, persistence, and drive to a collaborative engineering 
+                        team where I can continue growing while making meaningful contributions 
+                        from day one.
+                    </p>
+                </div>
+            </section>
+            <section id="skills">
+                <div class="skills-header">
+                    <span class="header-badge">Skills</span>
+                    <h1 class="header">What I Can Do</h1>
+                    <p class="header-description">
+                        Every project has taught me something new. These are the 
+                        technologies and skills I’ve used to design, build, and deploy 
+                        software.
+                    </p>
+                </div>
+                <div class="skill-categories">
+                    <div class="skill-category">
+                        <div class="skill-content">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="skill-icon-lucide" data-lucide="app-window"></i>
+                                </div>
+                                <h2 class="skill-name">
+                                    Frontend Development
+                                </h2>
+                            </div>
+                            <p class="skill-description">
+                                Build responsive user interfaces and interactive web applications that 
+                                deliver intuitive user experiences, consume and integrate external 
+                                APIs, and transform ideas into polished, user-focused products.
+                            </p>
+                        </div>
+                        <div class="skill-technologies">
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/html.svg" alt="html logo"/>
+                                <span class="icon-name">html</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/css.svg" alt="css logo"/>    
+                                <span class="icon-name">css</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/javascript.svg" alt="javascript logo"/>
+                                <span class="icon-name">javascript</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/typescript.svg" alt="javascript logo"/>
+                                <span class="icon-name">typescript</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/react.svg" alt="javascript logo"/>
+                                <span class="icon-name">react</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/react-router.svg" alt="javascript logo"/>
+                                <span class="icon-name">react router</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/tailwindcss.svg" alt="javascript logo"/>
+                                <span class="icon-name">tailwindcss</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/framer-motion.png" alt="javascript logo"/>
+                                <span class="icon-name">framer motion</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-content">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="skill-icon-lucide" data-lucide="server"></i>
+                                </div>
+                                <h2 class="skill-name">
+                                    Backend Development
+                                </h2>
+                            </div>
+                            <p class="skill-description">
+                                Develop backend systems that power modern web applications by 
+                                implementing business logic, designing reliable APIs, managing 
+                                application data, and building secure, scalable server-side services.
+                            </p>
+                        </div>
+                        <div class="skill-technologies">
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/nodejs.svg" alt="html logo"/>
+                                <span class="icon-name">node.js</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/express.svg" alt="javascript logo"/>
+                                <span class="icon-name">express.js</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/django.svg" alt="javascript logo"/>
+                                <span class="icon-name">django</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/javascript.svg" alt="javascript logo"/>
+                                <span class="icon-name">javascript</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/typescript.svg" alt="css logo"/>    
+                                <span class="icon-name">typescript</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/python.svg" alt="javascript logo"/>
+                                <span class="icon-name">python</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-content">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="skill-icon-lucide" data-lucide="database"></i>
+                                </div>
+                                <h2 class="skill-name">
+                                    Databases
+                                </h2>
+                            </div>
+                            <p class="skill-description">
+                                Design database solutions that efficiently organize and manage 
+                                application data, optimize query performance, and support the 
+                                reliability, scalability, and performance of modern web applications.
+                            </p>
+                        </div>
+                        <div class="skill-technologies">
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/postgres.svg" alt="html logo"/>
+                                <span class="icon-name">postgresql</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/django.svg" alt="css logo"/>    
+                                <span class="icon-name">django orm</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/sql.png" alt="javascript logo"/>
+                                <span class="icon-name">sql</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/mongodb.svg" alt="javascript logo"/>
+                                <span class="icon-name">mongodb</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-content">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="skill-icon-lucide" data-lucide="blocks"></i>
+                                </div>
+                                <h2 class="skill-name">
+                                    APIs & Integrations
+                                </h2>
+                            </div>
+                            <p class="skill-description">
+                                Integrate applications with REST and GraphQL APIs to consume, exchange, 
+                                and manage data, connecting third-party services, headless CMS 
+                                platforms, authentication providers, and AI-powered applications.
+                            </p>
+                        </div>
+                        <div class="skill-technologies">
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/graphql.svg" alt="css logo"/>    
+                                <span class="icon-name">graphql</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img style="background: white; padding: 2px;" class="icon-logo" src="public/apollo-graphql.svg" alt="javascript logo"/>
+                                <span class="icon-name">apollo</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/contentful.svg" alt="javascript logo"/>
+                                <span class="icon-name">contentful</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/emailjs.svg" alt="html logo"/>
+                                <span class="icon-name">emailjs</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/openai.jpeg" alt="html logo"/>
+                                <span class="icon-name">openai</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-content">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="skill-icon-lucide" data-lucide="cloud"></i>
+                                </div>
+                                <h2 class="skill-name">
+                                    Cloud & DevOps
+                                </h2>
+                            </div>
+                            <p class="skill-description">
+                                Deploy, configure, and maintain modern web applications by managing 
+                                cloud infrastructure, containerized environments, web servers, 
+                                deployment pipelines, and production-ready hosting solutions.
+                            </p>
+                        </div>
+                        <div class="skill-technologies">
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/docker.svg" alt="html logo"/>
+                                <span class="icon-name">docker</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/kubernetes.svg" alt="css logo"/>    
+                                <span class="icon-name">k8s</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/nginx.svg" alt="javascript logo"/>
+                                <span class="icon-name">nginx</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/aws.svg" alt="javascript logo"/>
+                                <span class="icon-name">aws</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/vercel.svg" alt="javascript logo"/>
+                                <span class="icon-name">vercel</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-content">
+                            <div class="skill-header">
+                                <div class="skill-icon">
+                                    <i class="skill-icon-lucide" data-lucide="wrench"></i>
+                                </div>
+                                <h2 class="skill-name">
+                                    Developer Tools
+                                </h2>
+                            </div>
+                            <p class="skill-description">
+                                Leverage modern development tools to streamline workflows, automate 
+                                repetitive tasks, manage source control, debug applications, and 
+                                improve productivity throughout the software development lifecycle.
+                            </p>
+                        </div>
+                        <div class="skill-technologies">
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/git.svg" alt="html logo"/>
+                                <span class="icon-name">git</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/github.svg" alt="css logo"/>    
+                                <span class="icon-name">github</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/vite.svg" alt="javascript logo"/>
+                                <span class="icon-name">vite</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/npm.svg" alt="javascript logo"/>
+                                <span class="icon-name">npm</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/bash.svg" alt="javascript logo"/>
+                                <span class="icon-name">bash</span>
+                            </div>
+                            <div class="tech-icon">
+                                <img class="icon-logo" src="public/vscode.svg" alt="javascript logo"/>
+                                <span class="icon-name">vscode</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects">
+                <div class="projects-header">
+                    <span class="header-badge">Projects</span>
+                    <h1 class="header">What I Have Built</h1>
+                    <p class="header-description">
+                        Every project has been an opportunity to solve real-world problems, 
+                        explore new technologies, and strengthen my skills as a software engineer. 
+                        Here are a few applications that showcase that journey.
+                    </p>
+                </div>
+                <ul class="projects-content">
+                    <li class="project">
+                        <div class="project-info">
+                            <h3 class="project-context">
+                                Party Rental Services
+                            </h3>
+                            <h2 class="project-name">
+                                Jump For Joy Inflatables
+                            </h2>
+                            <p class="project-description">
+                                A modern web application that allows customers to browse rental 
+                                inventory, explore available services, and submit booking requests 
+                                through a streamlined, user-friendly experience. Designed for a local 
+                                business, the platform simplifies the rental process while providing 
+                                an engaging and responsive experience across desktop and mobile devices. 
+                                Features dynamic content management, persistent shopping cart 
+                                functionality, and an automated booking inquiry system.
+                            </p>
+                            <ul class="project-technologies">
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/react-router.svg" alt="css logo"/>    
+                                    <span class="icon-name">react router</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/typescript.svg" alt="javascript logo"/>
+                                    <span class="icon-name">typescript</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/framer-motion.png" alt="javascript logo"/>
+                                    <span class="icon-name">framer motion</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/contentful.svg" alt="javascript logo"/>
+                                    <span class="icon-name">contentful</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/graphql.svg" alt="javascript logo"/>
+                                    <span class="icon-name">graphql</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img style="background: white; padding: 2px;" class="icon-logo" src="public/apollo-graphql.svg" alt="javascript logo"/>
+                                    <span class="icon-name">apollo</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/emailjs.svg" alt="javascript logo"/>
+                                    <span class="icon-name">emailjs</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/vercel.svg" alt="javascript logo"/>
+                                    <span class="icon-name">vercel</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/vite.svg" alt="javascript logo"/>
+                                    <span class="icon-name">vite</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/tailwindcss.svg" alt="javascript logo"/>
+                                    <span class="icon-name">tailwindcss</span>
+                                </li>
+                            </ul>
+                            <div class="project-links">
+                                <a class="link-github" href="https://github.com/mzamarri/jumps-for-joy" target="_blank" rel="noopener noreferrer">
+                                    <img class="link-icon" src="public/github.svg" alt="github icon">
+                                    GitHub
+                                    <i class="external-link" data-lucide="external-link"></i>
+                                </a>
+                                <a class="link-web" href="https://jumpforjoyinflatablesaz.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="link-icon" data-lucide="globe"></i>
+                                    Live Site
+                                    <i class="external-link" data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="browser">
+                            <div class="browser-bar">
+                                <div class="browser-window-controls">
+                                    <span class="browser-close"></span>
+                                    <span class="browser-minimize"></span>
+                                    <span class="browser-expand"></span>
+                                </div>
+                                <span class="search-bar"></span>
+                                <i class="ellipsis-vertical" data-lucide="ellipsis-vertical"></i>
+                            </div>
+                            <img class="project-image" src="public/j4ji-screenshot.png" alt="project image">
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="browser">
+                            <div class="browser-bar">
+                                <div class="browser-window-controls">
+                                    <span class="browser-close"></span>
+                                    <span class="browser-minimize"></span>
+                                    <span class="browser-expand"></span>
+                                </div>
+                                <span class="search-bar"></span>
+                                <i class="ellipsis-vertical" data-lucide="ellipsis-vertical"></i>
+                            </div>
+                            <img class="project-image" src="" alt="project image">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-context">
+                                E-Commerce Platform
+                            </h3>
+                            <h2 class="project-name">
+                                (Name TBD)
+                            </h2>
+                            <p class="project-description">
+                                A full-stack online shopping platform where users can browse products, 
+                                manage a shopping cart, and place orders through an intuitive purchasing 
+                                experience. Built to demonstrate the core functionality of a modern 
+                                e-commerce application, including product management, order processing, 
+                                and scalable backend architecture. Implements secure data persistence, 
+                                RESTful API communication, inventory management, and a containerized 
+                                deployment pipeline.
+                            </p>
+                            <ul class="project-technologies">
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/html.svg" alt="html logo"/>
+                                    <span class="icon-name">html</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/css.svg" alt="css logo"/>    
+                                    <span class="icon-name">css</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/javascript.svg" alt="javascript logo"/>
+                                    <span class="icon-name">javascript</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/nodejs.svg" alt="javascript logo"/>
+                                    <span class="icon-name">node.js</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/express.svg" alt="javascript logo"/>
+                                    <span class="icon-name">express.js</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/postgres.svg" alt="javascript logo"/>
+                                    <span class="icon-name">postgresql</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/docker.svg" alt="javascript logo"/>
+                                    <span class="icon-name">docker</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/nginx.svg" alt="javascript logo"/>
+                                    <span class="icon-name">nginx</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/aws.svg" alt="javascript logo"/>
+                                    <span class="icon-name">aws</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/bash.svg" alt="javascript logo"/>
+                                    <span class="icon-name">bash</span>
+                                </li>
+                            </ul>
+                            <div class="project-links">
+                                <a class="link-github">
+                                    <img class="link-icon" src="public/github.svg" alt="github icon">
+                                    GitHub
+                                    <i class="external-link" data-lucide="external-link"></i>
+                                </a>
+                                <a class="link-web">
+                                    <i class="link-icon" data-lucide="globe"></i>
+                                    Live Site
+                                    <i class="external-link" data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project-info">
+                            <h3 class="project-context">
+                                Dealership Review Management System
+                            </h3>
+                            <h2 class="project-name">
+                                (Name TBD)
+                            </h2>
+                            <p class="project-description">
+                                A dealership review platform that enables users to discover dealerships, 
+                                browse available inventory, read customer reviews, and submit authenticated 
+                                reviews. The application combines multiple services to provide a seamless 
+                                experience for exploring dealerships and sharing customer feedback. Includes 
+                                secure user authentication, automated sentiment analysis, microservice 
+                                communication, and persistent customer review management. All hosted on
+                                IBM cloud.
+                            </p>
+                            <ul class="project-technologies">
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/react.svg" alt="html logo"/>
+                                    <span class="icon-name">react</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/html.svg" alt="javascript logo"/>
+                                    <span class="icon-name">html</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/css.svg" alt="css logo"/>    
+                                    <span class="icon-name">css</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/javascript.svg" alt="javascript logo"/>
+                                    <span class="icon-name">javascript</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/django.svg" alt="javascript logo"/>
+                                    <span class="icon-name">django</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/python.svg" alt="javascript logo"/>
+                                    <span class="icon-name">python</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/docker.svg" alt="javascript logo"/>
+                                    <span class="icon-name">docker</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/kubernetes.svg" alt="javascript logo"/>
+                                    <span class="icon-name">k8s</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/mongodb.svg" alt="javascript logo"/>
+                                    <span class="icon-name">mongodb</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/express.svg" alt="javascript logo"/>
+                                    <span class="icon-name">express.js</span>
+                                </li>
+                                <li class="tech-icon">
+                                    <img class="icon-logo" src="public/nodejs.svg" alt="javascript logo"/>
+                                    <span class="icon-name">node.js</span>
+                                </li>
+                            </ul>
+                            <div class="project-links">
+                                <a class="link-github">
+                                    <img class="link-icon" src="public/github.svg" alt="github icon">
+                                    GitHub
+                                    <i class="external-link" data-lucide="external-link"></i>
+                                </a>
+                                <a class="link-web">
+                                    <i class="link-icon" data-lucide="globe"></i>
+                                    Live Site
+                                    <i class="external-link" data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="browser">
+                            <div class="browser-bar">
+                                <div class="browser-window-controls">
+                                    <span class="browser-close"></span>
+                                    <span class="browser-minimize"></span>
+                                    <span class="browser-expand"></span>
+                                </div>
+                                <span class="search-bar"></span>
+                                <i class="ellipsis-vertical" data-lucide="ellipsis-vertical"></i>
+                            </div>
+                            <img class="project-image" src="" alt="project image">
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section id="contact">
+                <div class="contact-header">
+                    <span class="header-badge">Contact</span>
+                    <h1 class="header">Lets Build Something Great</h1>
+                    <p class="header-description">
+                        Whether you have an opportunity, a project, or simply want to connect, 
+                        I’d love to hear from you. Feel free to reach out, and I’ll get back 
+                        to you as soon as I can.
+                    </p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-info-header">
+                            <i class="lucide-icon" data-lucide="circle-user"></i>
+                            <div class="header-text">
+                                <h2 class="contact-title">Ways To Reach Me</h2>
+                                <p class="contact-description">
+                                    Reach out by email, connect with me through the 
+                                    social platforms below, or send a message using the contact form. 
+                                </p>
+                            </div>
+                        </div>
+                        <ul class="contact-info-links">
+                            <li>
+                                <a class="contact-link" href="mailto:miguelazamarripar@gmail.com">
+                                    <i class="link-icon" data-lucide="mail"></i>
+                                    <div class="link-info">
+                                        <p class="link-label">Email</p>
+                                        <p class="link-value">miguelazamarripar@gmail.com</p>
+                                    </div>
+                                    <i class="arrow-icon" data-lucide="move-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="contact-link" href="https://linkedin.com/in/mzamarri" target="_blank" rel="noopener noreferrer">
+                                    <img class="link-icon" src="public/linkedin.svg" alt="linkedin logo">
+                                    <div class="link-info">
+                                        <p class="link-label">Linkedin</p>
+                                        <p class="link-value">linkedin.com/in/mzamarri</p>
+                                    </div>
+                                    <i class="arrow-icon" data-lucide="move-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="contact-link" href="https://github.com/mzamarri" target="_blank" rel="noopener noreferrer">
+                                    <img class="link-icon" src="public/github.svg" alt="github logo">
+                                    <div class="link-info">
+                                        <p class="link-label">Github</p>
+                                        <p class="link-value">github.com/mzamarri</p>
+                                    </div>
+                                    <i class="arrow-icon" data-lucide="move-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <form id="contact-form" action="/contact-form/" method="POST">
+                        <div class="form-header">
+                            <h2 class="form-title">Send a Message</h2>
+                        </div>
+                        <div class="contact-fields">
+                            <div class="input-field">
+                                <input id="full-name" type="text" name="fullName" placeholder="Full Name">
+                                <p class="error-msg" id="name-error"></p>
+                            </div>
+                            <div class="input-field">
+                                <input id="email" class="input-field" type="text" name="email" placeholder="Email">
+                                <p class="error-msg" id="email-error"></p>
+                            </div>
+                            <div class="input-field">
+                                <input id="phone-number" class="input-field" type="text" name="phoneNumber" placeholder="Phone Number">
+                                <p class="error-msg" id="phone-error"></p>
+                            </div>
+                            <div class="input-field">
+                                <input id="subject" class="input-field" type="text" name="subject" placeholder="Subject">
+                                <p class="error-msg" id="subject-error"></p>
+                            </div>
+                            <div class="textarea-field">
+                                <textarea class="input" id="message" name="message" cols="30" rows="15" placeholder="Message"></textarea>
+                                <p class="error-msg" id="message-error"></p>
+                            </div>
+                        </div>
+                        <button type="submit" class="contact-submit">
+                            <i class="submit-icon" data-lucide="send"></i>
+                            Send Message
+                        </button>
+                    </form>
+                    <dialog id="form-message">
+                        <i class="success-check" data-lucide="check"></i>
+                        <p class="success-message">Message Sent!</p>
+                        <p class="success-description">
+                            Thanks for reaching out. I will get back to you 
+                            as soon as possible.
+                        </p>
+                        <button id="close-popup" class="exit-btn" type="button" onclick="">Close</button>
+                    </dialog>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
