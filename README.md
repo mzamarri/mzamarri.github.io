@@ -84,7 +84,3 @@ This project is licensed under the MIT License — see the `LICENSE` file.
 ## Contact
 
 Use the contact form on the site to reach out. The form is handled client-side using EmailJS — the integration lives in [scripts/contact-form.js](scripts/contact-form.js#L1).
-
----
-
-If you'd like, I can add a `.env.example` (if you use any build-time secrets), an `MIT` license file, or a short bio / live-demo link to this README.
