@@ -18,7 +18,7 @@ const validationData = [
         {
             id: "email",
             errorId: "email-error",
-            errorMessage: "invalid email.",
+            errorMessage: "Invalid email.",
             regex: /^\s*[^\s@]+@[^\s@]+\.[^\s@]+$/
         },
         {
