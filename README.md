@@ -4,55 +4,53 @@ A personal portfolio website to showcase skills, projects, and provide an easy w
 
 ## Overview
 
-This repository contains a static frontend and a small Express server used for handling the contact form and related backend tasks. The site is built with lightweight dependencies so it can be run locally or deployed in a container.
+This repository contains a static, client-side portfolio. The contact form is handled in the browser using EmailJS (`@emailjs/browser`), so no server-side Express app is required.
 
 ## Features
 
-- Responsive single-page portfolio (frontend: `index.html`, `styles.css`).
-- Contact form with a server-side handler ([server/server.js](server/server.js#L1)).
-- Simple development and production start scripts via `npm`.
+- Responsive single-page portfolio (`index.html`, `styles.css`).
+- Contact form handled client-side with EmailJS ([scripts/contact-form.js](scripts/contact-form.js#L1)).
+- Lightweight dependencies suitable for static hosting (GitHub Pages, Netlify, Vercel).
 
 ## Tech Stack
 
 - HTML, CSS, JavaScript
-- Node.js + Express (server)
-- nodemailer, googleapis (optional contact/email integrations)
-- EmailJS (client-side helper)
+- EmailJS for client-side email sending (`@emailjs/browser`)
+- `lucide` and `tech-stack-icons` for icons
 
-See `package.json` for the full dependency list: [package.json](package.json#L1).
+See `package.json` for the dependency list: [package.json](package.json#L1).
 
 ## Local Development
 
-1. Install dependencies:
+1. Install dependencies (optional, used for package management):
 
 ```bash
 npm install
 ```
 
-2. Run in development (auto-restarts on changes):
+2. Open `index.html` in your browser, or serve the project folder with a static server. Examples:
+
+Using Python 3:
 
 ```bash
-npm run dev
+python -m http.server 3000
+# then open http://localhost:3000
 ```
 
-3. Or run production-style locally:
+Using Node's `http-server` (if installed globally):
 
 ```bash
-npm start
+npx http-server -p 3000
+# then open http://localhost:3000
 ```
 
-The server entrypoint is [server/server.js](server/server.js#L1).
-
-Environment and secrets:
-- Create a `.env` file (never commit secrets). The server may expect keys for Google API credentials or email credentials — inspect [server/server.js](server/server.js#L1) for the exact variable names used.
-
-The repository includes helper files for the contact form under `scripts/` and `resources/` (for example, [scripts/contact-form.js](scripts/contact-form.js#L1) and [resources/client_secret.json](resources/client_secret.json#L1)).
+The contact form integration is implemented in [scripts/contact-form.js](scripts/contact-form.js#L1). Review that file to confirm your EmailJS `service`, `template`, and `user` IDs.
 
 ## Docker / Deployment
 
-This project includes a `Dockerfile` and `compose.yaml` for containerized deployment.
+This project includes a `Dockerfile` and `compose.yaml` for optional containerized hosting, but they are not required for static deployments.
 
-Build and run with Docker:
+Build and run with Docker (optional):
 
 ```bash
 docker build -t portfolio .
@@ -65,17 +63,15 @@ Or with Docker Compose:
 docker compose up --build
 ```
 
-Adjust ports and environment values as needed for your hosting provider.
-
 ## Project Structure
 
 - [index.html](index.html#L1) — main frontend
 - styles.css — global styles
-- [server/server.js](server/server.js#L1) — Express server and contact endpoint
-- [package.json](package.json#L1) — scripts and dependencies
-- [scripts/](scripts/) — client-side JS helpers (contact form, typewriter, icons)
-- [resources/](resources/) — credentials and other resources (do not commit secrets)
-- Dockerfile, compose.yaml — containerization files
+- [scripts/contact-form.js](scripts/contact-form.js#L1) — client-side contact form integration
+- [scripts/](scripts/) — client-side JS helpers (typewriter, icons, form handling)
+- [resources/](resources/) — optional resources or credentials (remove any secrets)
+- [package.json](package.json#L1) — dependencies and scripts
+- Dockerfile, compose.yaml — optional containerization files
 
 ## Contributing
 
@@ -83,12 +79,12 @@ Contributions are welcome. Open an issue or submit a PR with a clear description
 
 ## License
 
-Add a `LICENSE` file to indicate the project license (e.g., MIT). If you want, I can add an MIT license for you.
+This project is licensed under the MIT License — see the `LICENSE` file.
 
 ## Contact
 
-Use the contact form on the site (handled by [server/server.js](server/server.js#L1)).
+Use the contact form on the site to reach out. The form is handled client-side using EmailJS — the integration lives in [scripts/contact-form.js](scripts/contact-form.js#L1).
 
 ---
 
-If you'd like, I can update this README with a short bio, live demo link, or add a sample `.env.example` showing the expected environment variables.
+If you'd like, I can add a `.env.example` (if you use any build-time secrets), an `MIT` license file, or a short bio / live-demo link to this README.
